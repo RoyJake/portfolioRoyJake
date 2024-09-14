@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #0a192f;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+/* The scrollbar itself */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* The scrollbar track */
+::-webkit-scrollbar-track {
+  background: #0a192f;
+  border-radius: 15px;
+}
+
+/* The scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: #64ffda;
+  border-radius: 50px;
+  opacity: 0.2;
+}
+
+/* The scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  opacity: 1;
+}
+
+
+

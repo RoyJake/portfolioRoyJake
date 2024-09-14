@@ -1,0 +1,169 @@
+section#ProjectSection {
+  height: fit-content;
+  width: 100%;
+}
+
+section#ProjectSection h1.sectionTitle {
+  display: flex;
+  font-size: clamp(24px, 8vw, 28px);
+  align-items: center;
+  color: #ccd6f6;
+  margin-bottom: 60px;
+}
+
+section#ProjectSection h1::after {
+  display: inline-block;
+  margin-left: 10px;
+  content: "";
+  height: 1px;
+  background-color: #8892b0;
+  opacity: 0.3;
+  flex-grow: 1;
+  flex-basis: 0px;
+}
+
+section#ProjectSection h1 span {
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  align-self: flex-end;
+  font-size: 18px;
+  font-weight: 400;
+  color: #64ffda;
+  margin-right: 4px;
+}
+
+/* styles for the various projects section */
+
+ul.projectContainer li {
+  list-style-type: none;   
+  height: fit-content;
+  margin-top: 25px;
+  border: 0.5px solid rgba(136, 146, 176, 0.1);
+}
+
+div.projectWrapper {
+  height: fit-content;
+  width: fit-content;
+  padding: 30px 25px;
+}
+
+div.projectTextWrapper h2 {
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-size: 18px;
+  font-weight: 500;
+  color: #64ffda;
+  margin-bottom: 20px;
+}
+
+h1.projectTitle {
+  font-size: 24px;
+  color: #ccd6f6;
+}
+
+p.projectDescription {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: clamp(14.5px, 4vw, 16px);
+  line-height: 20px;
+  margin-top: 15px;
+  color: #8892b0;
+}
+
+div.showCase {
+  display: flex;
+  height: 50vw;
+  width: 100%;
+  margin-top: 30px;
+  border: 1px solid #64ffda;
+  border-radius: 10px;
+  overflow-y: hidden;
+}
+
+div.showCase video{
+  object-fit: fill;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+p.projectDescription a {
+  color: #64ffda;
+  text-decoration: none;
+}
+
+div.projectLinks {
+  margin-top: 30px;
+}
+
+div.projectLinksInWrapper {
+  display: none;
+}
+
+div.projectLinks a img {
+  height: 25px;
+  width: 25px;
+  margin-right: 15px;
+}
+
+/* 1020px breakpoint */
+
+/* ////////////////////////////////////////////////////////// */
+
+@media screen and (min-width: 63em) {
+  section#ProjectSection {
+    width: 110%;
+    margin-left: -5%;
+  }
+
+  section#ProjectSection h1 span {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  section#ProjectSection h1.sectionTitle { 
+    font-size: clamp(25px, 8vw, 35px);
+  }
+
+  ul.projectContainer li {
+    margin-top: 80px;
+  }
+
+  div.projectWrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  div.projectTextWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+    width: 35%;
+    margin: auto 0;
+  }
+
+  /* div.projectTextWrapper h2 {
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    font-size: 18px;
+    font-weight: 500;
+    color: #64ffda;
+  } */
+
+  div.projectLinks {
+    display: none;
+  }
+
+  div.projectLinksInWrapper {
+    display: block;
+    padding-top: 20px
+  }
+
+  div.projectLinksInWrapper a img {
+    height: 25px;
+    width: 25px;
+    margin-right: 15px;
+  }
+
+  div.showCase {
+    height: 30vw;
+    width: 60%;
+  }
+}

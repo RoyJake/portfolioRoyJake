@@ -1,0 +1,112 @@
+section#AboutSection {
+  /* font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
+    system-ui, sans-serif; */
+  height: fit-content;
+  width: 100%;
+  margin-bottom: 150px;
+  /* background: red; */
+
+}
+
+section#AboutSection h1 {
+  word-spacing: -4px;
+  font-size: clamp(24px, 4vw, 28px);
+  display: flex;
+  align-items: center;
+  color: #ccd6f6;
+  margin-bottom: 40px;
+}
+
+section#AboutSection h1::after {
+  display: inline-block;
+  margin-left: 10px;
+  content: "";
+  height: 1px;
+  flex-basis: 120px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  background-color: #8892b0;
+  opacity: 0.3;
+}
+
+section#AboutSection h1 span {
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  align-self: flex-end;
+  font-size: 18px;
+  font-weight: 400;
+  color: #64ffda;
+  margin-right: 8px;
+}
+
+section#AboutSection p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: clamp(14.5px, 4vw, 16px);
+  line-height: 25px;
+  margin-top: 20px;
+  color: #8892b0;
+}
+
+section#AboutSection div.tools {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+
+section#AboutSection div.tools ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 70px;
+  width: 320px;
+  color: #8892b0;
+  list-style-type: none;
+}
+
+section#AboutSection div.tools li::before {
+  content: "▹";
+  color: #64ffda;
+  margin-right: 10px;
+}
+
+div.picture {
+  display: block;
+  height: 230px;
+  width: 250px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-image: url(../Assets/Roy.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+div.picture::before {
+  display: block;
+  content: "";
+  height: 228px;
+  width: 250px;
+  border-radius: 10px;
+  background-color: #64ffda;
+  opacity: 0.3;
+}
+
+/* ///////////////////////////////////////////////////////// */
+
+@media screen and (min-width: 46.88em) {
+  section#AboutSection{
+    display: flex;
+  }
+
+  div.aboutTextWrapper {
+    width: 58%;
+  }
+
+  div.aboutTextWrapper p {
+    font-size: clamp(15px, 8vw, 17px);
+    padding-right: 20px;
+  }
+
+  div.picture{
+    margin-top: 80px;
+  }
+}

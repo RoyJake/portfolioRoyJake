@@ -1,0 +1,68 @@
+section#getIntouchSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  width: 100%;
+}
+
+section#getIntouchSection h1 {
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-size: 17px;
+  font-weight: 400;
+  color: #64ffda;
+  margin-bottom: 20px;
+}
+
+section#getIntouchSection h1 span {
+  font-size: 15px;
+  padding: 10px;
+}
+section#getIntouchSection h2 {
+  font-size: 35px;
+  color: #ccd6f6;
+  margin-bottom: 20px;
+}
+
+section#getIntouchSection p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: clamp(14.5px, 4vw, 16px);
+  line-height: 20px;
+  padding: 0 10px;
+  text-align: center;
+  color: #8892b0;
+  margin-bottom: 50px;
+}
+section#getIntouchSection button {
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  background-color: #0a192f;
+  border: 1px solid #64ffda;
+  color: #64ffda;
+  font-size: 16px;
+  border-radius: 5px;
+  height: 60px;
+  width: 150px;
+}
+
+/* 720px breakpoint */
+
+/* /////////////////////////////////////////////// */
+
+@media screen and (min-width: 46.88em) {
+  section#getIntouchSection p {
+    padding: 0 50px;
+  }
+}
+
+/* 1020px breakpoint */
+
+/* ///////////////////////////////////////////// */
+
+@media screen and (min-width: 63em) {
+  section#getIntouchSection p {
+    padding: 0 200px;
+  }
+
+}

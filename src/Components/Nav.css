@@ -1,0 +1,184 @@
+nav.navigationBar {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ height: 80px;
+ width: 100vw;
+ position: fixed;
+ top: 0;
+ left: 0;
+ background-color: rgba(10, 25, 47, 0.8);
+ backdrop-filter: blur(50px);
+ /* background-color: blue; */
+ z-index: 2;
+}
+
+div.logo {
+ position: absolute;
+ left: 30px;
+ height: 70px;
+ width: 70px;
+ background-image: url(../Assets/logo.svg);
+ background-repeat: no-repeat;
+ background-position: -10px center;
+ z-index: 3;
+}
+
+div.menuWrapper {
+ position: absolute;
+ right: 40px;
+ height: 40px;
+ width: 40px;
+ z-index: 3;
+ cursor: pointer;
+}
+
+div.menu {
+ position: absolute;
+ top: 20px;
+ height: 2px;
+ width: 40px;
+ background-color: #64ffda;
+ z-index: 3;
+}
+
+div#before {
+
+ transform: translateY(-10px);
+}
+
+div#after {
+ 
+ transform: translateY(10px);
+}
+
+
+
+
+
+ul#menuPage {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ list-style-type: none;
+ position: fixed;
+ left: 0;
+ top: 0;
+ height: 100vh;
+ width: 100vw;
+ background-color: #112240;
+ transform: scaleY(0);
+ transform-origin: center bottom;
+ z-index: 1;
+}
+
+ul#menuPage[toggle="false"] {
+ transform-origin: center top;
+}
+
+ul#menuPage li {
+ font-family: "Roboto", sans-serif;
+ font-weight: 600;
+ font-size: 35px;
+ color: #ccd6f6;
+ height: 80px;
+ width: 150px;
+ padding: 10px 0;
+ text-align: center;
+ margin-bottom: 5px;
+}
+
+ul#menuPage li button {
+ font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+ font-size: 18px;
+ color: #64ffda;
+ background-color: #0a192f;
+ border: 1px solid #64ffda;
+ border-radius: 5px;
+ height: 50px;
+ width: 150px;
+ padding: 10px 0;
+ margin-top: 30px;
+}
+
+ul#menuPage li span {
+ display: block;
+ font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+ font-size: 20px;
+ color: #64ffda;
+ 
+}
+
+
+/* 760px breakpoint */
+
+/* ///////////////////////////////////////////////////// */
+
+@media screen and (min-width: 46.88em) {
+
+ nav.navigationBar {
+   height: 90px;
+ }
+
+ div.menuWrapper {
+  display: none;
+ }
+
+
+ ul#menuPage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin-left: auto;
+  position: absolute;
+  right: 0px;
+  height: 90px;
+  width: 70vw;
+  background-color: transparent;
+  transform: scaleY(1);
+ }
+
+
+ ul#menuPage li {
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-weight: normal;
+  font-size: 16px;
+  height: fit-content;
+  width: fit-content;
+  padding: 10px 10px;
+  text-align: center;
+  margin-bottom: 0px;
+  /* background-color: red; */
+ }
+ 
+ ul#menuPage li button {
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-size: 16px;
+  height: 40px;
+  width: 100px;
+  padding: 10px 0;
+  margin-top: 0px;
+ }
+ 
+ ul#menuPage li span {
+  display: inline;
+  padding-right: 3px;
+  font-size: 14px;
+ }
+}
+
+
+/* 1020px breakpoint */
+
+/* ////////////////////////////////////////////////// */
+
+@media screen and (min-width: 63em) {
+
+  ul#menuPage {
+    width: 600px;
+    /* background-color: red; */
+   }
+}
