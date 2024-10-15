@@ -77,7 +77,7 @@ ul#menuPage[toggle="false"] {
  transform-origin: center top;
 }
 
-ul#menuPage li {
+ul#menuPage li a{
  font-family: "Roboto", sans-serif;
  font-weight: 600;
  font-size: 35px;
@@ -87,6 +87,7 @@ ul#menuPage li {
  padding: 10px 0;
  text-align: center;
  margin-bottom: 5px;
+ text-decoration: none;
 }
 
 ul#menuPage li button {
@@ -100,6 +101,9 @@ ul#menuPage li button {
  width: 150px;
  padding: 10px 0;
  margin-top: 30px;
+}
+ul#menuPage li button a{
+ color: #64ffda;
 }
 
 ul#menuPage li span {
@@ -142,7 +146,7 @@ ul#menuPage li span {
  }
 
 
- ul#menuPage li {
+ ul#menuPage li a{
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-weight: normal;
   font-size: 16px;
@@ -151,7 +155,7 @@ ul#menuPage li span {
   padding: 10px 10px;
   text-align: center;
   margin-bottom: 0px;
-  /* background-color: red; */
+ text-decoration: none;
  }
  
  ul#menuPage li button {

@@ -19,7 +19,7 @@ const onLoadHeaderAnimation = {
 
 const Header = function () {
  return (
-  <header>
+  <header id='header_section'>
    <motion.div className="headerTextContainer"  initial="initial" animate="final" transition={{ staggerChildren: 0.2 }} >
 
     <motion.h1 variants={onLoadHeaderAnimation}>Hi, my name is</motion.h1>
@@ -28,11 +28,11 @@ const Header = function () {
     <motion.p variants={onLoadHeaderAnimation}>I'm a software engineer specializing in full-stack web development. I create dynamic and interactive web applications using both front-end and back-end frameworks such as react.js, express.js and Node.js. </motion.p>
 
     <motion.div className='socialIcons' variants={onLoadHeaderAnimation}>
-     <a href='https://github.com/RoyJake'><img src={github} alt='github'></img></a>
-     <a href='https://github.com/RoyJake'><img src={linkedIn} alt='linkedIn'></img></a>
-     <a href='https://github.com/RoyJake'><img src={email} alt='email'></img></a>
-     <a href='https://github.com/RoyJake'><img src={instagram} alt='instagram'></img></a>
-     <a href='https://github.com/RoyJake'><img src={x} alt='x'></img></a>
+     <a href='https://github.com/RoyJake' target='_blank' rel="noreferrer" ><img src={github} alt='github'></img></a>
+     <a href='https://www.linkedin.com/in/roy-osei-3253a8321/' target='_blank' rel="noreferrer"><img src={linkedIn} alt='linkedIn'></img></a>
+     <a href='mailto:royjake629@gmail.com' target='_blank' rel="noreferrer"><img src={email} alt='email'></img></a>
+     <a href='https://github.com/RoyJake' target='_blank' rel="noreferrer"><img src={instagram} alt='instagram'></img></a>
+     <a href='https://github.com/RoyJake' target='_blank' rel="noreferrer"><img src={x} alt='x'></img></a>
     </motion.div>
 
    </motion.div>

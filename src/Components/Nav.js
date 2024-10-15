@@ -91,11 +91,11 @@ const Nav = function () {
    <motion.ul id='menuPage' initial='initial' animate='final' transition={{ staggerChildren: 0.2 }} toggle={isActive.toString()}
 
    >
-    <motion.li variants={onLoadNavAnimation}><span >01.</span>Home</motion.li>
-    <motion.li variants={onLoadNavAnimation}><span >02.</span>About</motion.li>
-    <motion.li variants={onLoadNavAnimation}><span >03.</span>Projects</motion.li>
-    <motion.li variants={onLoadNavAnimation}><span>04.</span>Contact</motion.li>
-    <motion.li variants={onLoadNavAnimation}><button>Resume</button></motion.li>
+    <motion.li variants={onLoadNavAnimation}><a href='#header_section'><span >01.</span>Home</a></motion.li>
+    <motion.li variants={onLoadNavAnimation}><a href='#AboutSection'><span >02.</span>About</a></motion.li>
+    <motion.li variants={onLoadNavAnimation}><a href='#ProjectSection'><span >03.</span>Projects</a></motion.li>
+    <motion.li variants={onLoadNavAnimation}><a href='#getIntouchSection'><span>04.</span>Contact</a></motion.li>
+    <motion.li variants={onLoadNavAnimation}><button><a href="/Resume_ROY OSEI.pdf" download="Resume_ROY_OSEI.pdf" >Resume</a></button></motion.li>
    </motion.ul>
 
   </motion.nav>

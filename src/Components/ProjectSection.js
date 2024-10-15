@@ -21,17 +21,19 @@ const ProjectSection = function () {
 
       <div className='projectTextWrapper'>
        <h2>Project</h2>
-       <h1 className='projectTitle'>LALI onthisone</h1>
-       <p className='projectDescription'>The project involves creating a dynamic and engaging website for <a href='https://l.instagram.com/?u=https%3A%2F%2Flinktr.ee%2FLali_onthisone&e=AT1zP9ytxA6N7mLUhCG9YivwgxRMo-5jVr73KuJd5zQ7s7rXYAoqDwcTntC8mPcFohBFqzJ-bNQ0ac_LTbjbqcEA8ntvNCNbEto7Sw'>Lali onthisone</a>, a rap/singer artist. The website will serve as a central hub for fans, industry professionals, and new listeners to explore Lali's music, biography, upcoming events, and more.</p>
+       <h1 className='projectTitle'>The Figma Store</h1>
+       <p className='projectDescription'>Figma Store is an interactive and dynamic platform for Figma enthusiasts. It offers a curated selection of apparel and accessories tailored to the Figma community, making it easy to find and explore essential design components and layers.</p>
        <div className='projectLinksInWrapper'>
-        <a href="https://github.com/RoyJake"><img src={github} alt="link_to_source_code"></img></a><a href="https://github.com/RoyJake"><img src={liveIcon} alt="link_to_website"></img></a>
+        <a href="https://github.com/RoyJake/figma-store" target='_blank' rel="noreferrer"><img src={github} alt="link_to_source_code"></img></a>
+        <a href="https://the-figma-store.vercel.app/" target='_blank' rel="noreferrer"><img src={liveIcon} alt="link_to_website"></img></a>
        </div>
       </div>
 
       <div className='showCase'></div>
 
       <div className='projectLinks'>
-       <a href="https://github.com/RoyJake"><img src={github} alt="link_to_source_code"></img></a><a href="https://github.com/RoyJake"><img src={liveIcon} alt="link_to_website"></img></a>
+       <a href="https://github.com/RoyJake/figma-store" target='_blank' rel="noreferrer"><img src={github} alt="link_to_source_code"></img></a>
+       <a href="https://the-figma-store.vercel.app/" target='_blank' rel="noreferrer"><img src={liveIcon} alt="link_to_website"></img></a>
       </div>
 
      </div>
@@ -45,14 +47,16 @@ const ProjectSection = function () {
        <h1 className='projectTitle'>Qrates</h1>
        <p className='projectDescription'>This project is a passionate initiative created by record and cassette enthusiasts who deeply value the unique connection between musicians and their fans through physical music formats. Their mission is to empower artists to share the magic of their music on vinyl records and cassettes, making these tangible pieces of art accessible to more people.</p>
        <div className='projectLinksInWrapper'>
-        <a href="https://github.com/RoyJake"><img src={github} alt="link_to_source_code"></img></a><a href="https://github.com/RoyJake"><img src={liveIcon} alt="link_to_website"></img></a>
+        <a href="https://github.com/RoyJake/qrates" target='_blank' rel="noreferrer"><img src={github} alt="link_to_source_code"></img></a>
+        <a href="https://qrates.onrender.com/" target='_blank' rel="noreferrer"><img src={liveIcon} alt="link_to_website"></img></a>
        </div>
       </div>
 
       <div className='showCase'><video src={qrates} muted autoplay loop></video></div>
 
       <div className='projectLinks'>
-       <a href="https://github.com/RoyJake"><img src={github} alt="link_to_source_code"></img></a><a href="https://github.com/RoyJake"><img src={liveIcon} alt="link_to_website"></img></a>
+       <a href="https://github.com/RoyJake/qrates" target='_blank' rel="noreferrer"><img src={github} alt="link_to_source_code"></img></a>
+       <a href="https://qrates.onrender.com/" target='_blank' rel="noreferrer"><img src={liveIcon} alt="link_to_website"></img></a>
       </div>
 
      </div>
@@ -66,14 +70,16 @@ const ProjectSection = function () {
        <h1 className='projectTitle'>Ableton</h1>
        <p className='projectDescription'>This project is for a group that develop and provide unique software and hardware solutions that revolutionize music creation and performance. Their flagship products—Live, Push, Note, and Link—are designed to inspire and empower musicians, producers, and performers around the world.</p>
        <div className='projectLinksInWrapper'>
-        <a href="https://github.com/RoyJake"><img src={github} alt="link_to_source_code"></img></a><a href="https://github.com/RoyJake"><img src={liveIcon} alt="link_to_website"></img></a>
+        <a href="https://github.com/RoyJake/AbletonSiteProject" target='_blank' rel="noreferrer"><img src={github} alt="link_to_source_code"></img></a>
+        <a href="https://ableton.onrender.com/" target='_blank' rel="noreferrer"><img src={liveIcon} alt="link_to_website"></img></a>
        </div>
       </div>
 
       <div className='showCase'><video src={abletonVideo} muted autoplay loop></video></div>
 
       <div className='projectLinks'>
-       <a href="https://github.com/RoyJake"><img src={github} alt="link_to_source_code"></img></a><a href="https://github.com/RoyJake"><img src={liveIcon} alt="link_to_website"></img></a>
+       <a href="https://github.com/RoyJake/AbletonSiteProject" target='_blank' rel="noreferrer"><img src={github} alt="link_to_source_code"></img></a>
+       <a href="https://ableton.onrender.com/" target='_blank' rel="noreferrer"><img src={liveIcon} alt="link_to_website"></img></a>
       </div>
 
      </div>
