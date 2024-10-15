@@ -25,7 +25,7 @@ const Header = function () {
     <motion.h1 variants={onLoadHeaderAnimation}>Hi, my name is</motion.h1>
     <motion.h2 variants={onLoadHeaderAnimation}>Roy Jake.</motion.h2>
     <motion.h3 variants={onLoadHeaderAnimation}>I build web ideas from front to back.</motion.h3>
-    <motion.p variants={onLoadHeaderAnimation}>I'm a software engineer specializing in full-stack web development. I create dynamic and interactive web applications using both front-end and back-end frameworks such as react.js, express.js and Node.js. </motion.p>
+    <motion.p variants={onLoadHeaderAnimation}>I'm a software engineer with a strong interest in Artificial Intelligence, specializing in full-stack web development. I create dynamic and interactive applications using both front-end and back-end frameworks such as react.js, express.js and Node.js. </motion.p>
 
     <motion.div className='socialIcons' variants={onLoadHeaderAnimation}>
      <a href='https://github.com/RoyJake' target='_blank' rel="noreferrer" ><img src={github} alt='github'></img></a>
