@@ -6,6 +6,7 @@ import github from '../Assets/githubPL.svg';
 import liveIcon from '../Assets/liveIcon.svg';
 import abletonVideo from '../Assets/abletonVideo.mp4'
 import qrates from '../Assets/qrates.mp4'
+import figmaStore from '../Assets/figmaStore.mp4'
 
 
 
@@ -29,7 +30,7 @@ const ProjectSection = function () {
        </div>
       </div>
 
-      <div className='showCase'></div>
+      <div className='showCase'><video src={figmaStore} muted autoplay loop></video></div>
 
       <div className='projectLinks'>
        <a href="https://github.com/RoyJake/figma-store" target='_blank' rel="noreferrer"><img src={github} alt="link_to_source_code"></img></a>
