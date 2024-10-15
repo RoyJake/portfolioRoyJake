@@ -11,6 +11,7 @@ nav.navigationBar {
  backdrop-filter: blur(50px);
  /* background-color: blue; */
  z-index: 2;
+
 }
 
 div.logo {
@@ -123,6 +124,7 @@ ul#menuPage li span {
 
  nav.navigationBar {
    height: 90px;
+
  }
 
  div.menuWrapper {

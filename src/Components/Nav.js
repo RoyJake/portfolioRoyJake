@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { motion, useMotionValueEvent, useScroll, useAnimate, } from 'framer-motion';
+import { motion, useMotionValueEvent, useScroll, useAnimate, useTransform } from 'framer-motion';
 
 
 //importing styles for the Nav component
@@ -25,7 +25,7 @@ const Nav = function () {
  const [hidden, setHidden] = useState(false);
  const { scrollY } = useScroll();
  const [scope1, animate1] = useAnimate();
- // const [scope2, animate2] = useAnimate();
+ const boxShadow = useTransform(scrollY, [0, 100], ['none', '5px 5px 15px rgba(0, 0, 0, 0.3)']);
 
  useEffect(() => {
   const menuPage = document.querySelector('#menuPage');
@@ -71,7 +71,7 @@ const Nav = function () {
  return (
 
 
-  <motion.nav className="navigationBar" ref={scope1}
+  <motion.nav className="navigationBar" ref={scope1} style={{ boxShadow: boxShadow, transition: 'box-shadow 0.3s ease', }}
    variants={navVariants}
    animate={hidden ? "hidden" : "vissible"}
   >
