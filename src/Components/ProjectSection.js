@@ -30,7 +30,7 @@ const ProjectSection = function () {
        </div>
       </div>
 
-      <div className='showCase'><video src={figmaStore} muted autoplay loop></video></div>
+      <div className='showCase'><video  muted autoPlay loop><source src={figmaStore} type="video/mp4" /></video></div>
 
       <div className='projectLinks'>
        <a href="https://github.com/RoyJake/figma-store" target='_blank' rel="noreferrer"><img src={github} alt="link_to_source_code"></img></a>
@@ -53,7 +53,7 @@ const ProjectSection = function () {
        </div>
       </div>
 
-      <div className='showCase'><video src={qrates} muted autoplay loop></video></div>
+      <div className='showCase'><video src={qrates} muted autoPlay loop></video></div>
 
       <div className='projectLinks'>
        <a href="https://github.com/RoyJake/qrates" target='_blank' rel="noreferrer"><img src={github} alt="link_to_source_code"></img></a>
@@ -76,7 +76,7 @@ const ProjectSection = function () {
        </div>
       </div>
 
-      <div className='showCase'><video src={abletonVideo} muted autoplay loop></video></div>
+      <div className='showCase'><video src={abletonVideo} muted autoPlay loop></video></div>
 
       <div className='projectLinks'>
        <a href="https://github.com/RoyJake/AbletonSiteProject" target='_blank' rel="noreferrer"><img src={github} alt="link_to_source_code"></img></a>
