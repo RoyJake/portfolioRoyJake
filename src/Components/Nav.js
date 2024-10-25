@@ -95,7 +95,7 @@ const Nav = function () {
     <motion.li variants={onLoadNavAnimation}><a href='#AboutSection'><span >02.</span>About</a></motion.li>
     <motion.li variants={onLoadNavAnimation}><a href='#ProjectSection'><span >03.</span>Projects</a></motion.li>
     <motion.li variants={onLoadNavAnimation}><a href='#getIntouchSection'><span>04.</span>Contact</a></motion.li>
-    <motion.li variants={onLoadNavAnimation}><button><a href="http://localhost:5000/download/Resume(Roy Jake).pdf" download>Resume</a></button></motion.li>
+    <motion.li variants={onLoadNavAnimation}><button><a href="https://portfolio-backend-fbhu.onrender.com/download/Resume(Roy Jake).pdf" download>Resume</a></button></motion.li>
    </motion.ul>
 
   </motion.nav>
