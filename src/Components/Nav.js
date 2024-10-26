@@ -26,6 +26,7 @@ const Nav = function () {
  const { scrollY } = useScroll();
  const [scope1, animate1] = useAnimate();
  const boxShadow = useTransform(scrollY, [0, 100], ['none', '5px 5px 15px rgba(0, 0, 0, 0.3)']);
+ 
 
  useEffect(() => {
   const menuPage = document.querySelector('#menuPage');
@@ -65,6 +66,13 @@ const Nav = function () {
   }
  });
 
+ const handleMenuOff = function () {
+  setIsActive(isActive => !isActive)
+  menuAnimation(!isActive);
+  menuBurgerAnimation(!isActive);
+
+ }
+
 
 
 
@@ -88,7 +96,7 @@ const Nav = function () {
     <motion.div id="after" className="menu" />
    </motion.div>
 
-   <motion.ul id='menuPage' initial='initial' animate='final' transition={{ staggerChildren: 0.2 }} toggle={isActive.toString()}
+   <motion.ul id='menuPage' initial='initial' animate='final' transition={{ staggerChildren: 0.2 }} toggle={isActive.toString()} onClick={handleMenuOff}
 
    >
     <motion.li variants={onLoadNavAnimation}><a href='#header_section'><span >01.</span>Home</a></motion.li>
