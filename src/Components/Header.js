@@ -29,10 +29,10 @@ const Header = function () {
 
     <motion.div className='socialIcons' variants={onLoadHeaderAnimation}>
      <a href='https://github.com/RoyJake' target='_blank' rel="noreferrer" ><img src={github} alt='github'></img></a>
-     <a href='https://www.linkedin.com/in/roy-osei-3253a8321/' target='_blank' rel="noreferrer"><img src={linkedIn} alt='linkedIn'></img></a>
+     <a href='https://www.linkedin.com/in/roy-jake-3253a8321/' target='_blank' rel="noreferrer"><img src={linkedIn} alt='linkedIn'></img></a>
      <a href='mailto:royjake629@gmail.com' target='_blank' rel="noreferrer"><img src={email} alt='email'></img></a>
-     <a href='https://github.com/RoyJake' target='_blank' rel="noreferrer"><img src={instagram} alt='instagram'></img></a>
-     <a href='https://github.com/RoyJake' target='_blank' rel="noreferrer"><img src={x} alt='x'></img></a>
+     <a href='https://www.instagram.com/royjake.codes/' target='_blank' rel="noreferrer"><img src={instagram} alt='instagram'></img></a>
+     <a href='https://x.com/ROYJAKE_RJ' target='_blank' rel="noreferrer"><img src={x} alt='x'></img></a>
     </motion.div>
 
    </motion.div>

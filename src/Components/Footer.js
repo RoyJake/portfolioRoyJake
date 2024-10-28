@@ -26,15 +26,15 @@ const Footer = function () {
     <li id='socials'>
      <h1>Follow me on</h1>
      <ul>
-      <li><a>Instagram</a></li>
-      <li><a>LinkedIn</a></li>
-      <li><a>X</a></li>
+      <li><a href='https://www.instagram.com/royjake.codes/' target='_blank' rel="noreferrer">Instagram</a></li>
+      <li><a href='https://www.linkedin.com/in/roy-jake-3253a8321/' target='_blank' rel="noreferrer" >LinkedIn</a></li>
+      <li><a href='https://x.com/ROYJAKE_RJ' target='_blank' rel="noreferrer">X</a></li>
      </ul>
     </li>
    </ul>
 
    <div id='copyright'>
-    <a href='#'></a>
+    <a href='https://royjake.onrender.com/'>.</a>
     <p>© 2019 — 2024<br />Built by Roy Jake.</p>
    </div>
   </footer>

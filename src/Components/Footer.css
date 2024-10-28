@@ -45,6 +45,16 @@ li#socials ul li {
   color: #8892b0;
 }
 
+li#socials ul li a{
+  color: #8892b0;
+  text-decoration: none;
+}
+
+li#socials ul li a:hover{
+  color: #64ffda;
+  text-decoration: none;
+}
+
 li#contactInfo p span {
   display: inline-block;
   margin-top: 10px;
