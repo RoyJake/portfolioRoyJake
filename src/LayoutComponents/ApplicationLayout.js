@@ -1,7 +1,8 @@
-
+import { useEffect, useState } from 'react'
 
 
 // importing the components of the website.
+import LoadingPage from '../Components/LoadingPage.js'
 import Nav from '../Components/Nav.js';
 import Header from '../Components/Header.js';
 import AboutSection from '../Components/AboutSection.js';
@@ -16,21 +17,30 @@ import './ApplicationLayout.css';
 
 
 const ApplicationLayout = function () {
+ const [homepageReady, setHomepageReady] = useState(false);
 
+ useEffect(() => {
+  const timeOut = setTimeout(() => {
+   setHomepageReady(true);
+  }, 3500)
+
+  return () => clearTimeout(timeOut);
+ }, [])
 
  return (
-  <>
+  homepageReady ?
+   <>
+    <Nav />
+    <main>
+     <Header />
+     <AboutSection />
+     <ProjectSection />
+     <GetIntouchSection />
+     <Footer />
+    </main>
+   </>
+   : <LoadingPage />
 
-   <Nav />
-   <main>
-    <Header />
-    <AboutSection />
-    <ProjectSection />
-    <GetIntouchSection />
-    <Footer />
-   </main>
-
-  </>
  );
 };
 

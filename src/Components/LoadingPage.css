@@ -1,0 +1,14 @@
+#loadingPage{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 100vh;
+ width: 100vw;
+ background-color: #0a192f;
+
+}
+
+svg{
+ height: 120px;
+ width: 120px;
+}
